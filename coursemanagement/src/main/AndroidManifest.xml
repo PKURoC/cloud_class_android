@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.vontroy.pku_ss_cloud_class">
+
+    <!-- To auto-complete the email text field in the login form with the user's emails -->
+    <uses-permission android:name="android.permission.GET_ACCOUNTS" />
+    <uses-permission android:name="android.permission.READ_PROFILE" />
+    <uses-permission android:name="android.permission.READ_CONTACTS" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+
+    <application
+        android:name="com.vontroy.pku_ss_cloud_class.CustomApplication"
+        android:allowBackup="true"
+        android:icon="@drawable/icon"
+        android:label="@string/app_name"
+        android:largeHeap="true"
+        android:theme="@style/AppTheme">
+        <activity
+            android:name="com.vontroy.pku_ss_cloud_class.main.MainActivity"
+            android:label="@string/app_name">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.vontroy.pku_ss_cloud_class.guide.GuideActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.vontroy.pku_ss_cloud_class.user_account.login.LoginActivity"
+            android:label="@string/title_activity_login"></activity>
+        <activity
+            android:name="com.vontroy.pku_ss_cloud_class.course.CourseActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.vontroy.pku_ss_cloud_class.course.detail.CourseDetailActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.vontroy.pku_ss_cloud_class.user_account.register.RegActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.vontroy.pku_ss_cloud_class.course.add.AddCourseActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.vontroy.pku_ss_cloud_class.about.AboutActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.vontroy.pku_ss_cloud_class.my_message.MyMsgActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.vontroy.pku_ss_cloud_class.course.JoinedCourse.JoinedCourseActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.vontroy.pku_ss_cloud_class.profile.UpdateProfileActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.vontroy.pku_ss_cloud_class.my_message.MyMsgDetailActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.vontroy.pku_ss_cloud_class.about.FunctionIntroductionActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.vontroy.pku_ss_cloud_class.about.SystemNotificationActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.vontroy.pku_ss_cloud_class.course.group.create.AddGroupActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.vontroy.pku_ss_cloud_class.course.group.detail.GroupDetailActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.vontroy.pku_ss_cloud_class.course.homework.detail.JobDetailActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.vontroy.pku_ss_cloud_class.course.group.home.GroupDocUploadActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.vontroy.pku_ss_cloud_class.transfer_list.TransferListActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".about.feedback.FeedBackActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".user_account.reset_password.ResetPwdActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".course.course_evaluate.CourseEvaluateActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".storage.ABEActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".storage.file_utils.FileUtilActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".storage.crypto.CryptoActivity"
+            android:screenOrientation="portrait" />
+    </application>
+
+</manifest>

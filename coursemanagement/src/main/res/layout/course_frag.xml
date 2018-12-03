@@ -1,0 +1,512 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tool="http://schemas.android.com/tools">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/select"
+            android:layout_alignParentTop="true">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="220dp">
+
+                        <ImageView
+                            android:id="@+id/course_img"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent" />
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentBottom="true"
+                            android:layout_alignParentLeft="true"
+                            android:layout_alignParentStart="true"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:id="@+id/course_name"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentBottom="true"
+                                android:layout_marginLeft="@dimen/dp_12"
+                                android:textAppearance="@style/TextAppearance.AppCompat.Headline"
+                                android:textColor="@color/white"
+                                android:textStyle="normal"
+                                android:textSize="18sp"
+                                tool:text="课程名称" />
+
+                            <TextView
+                                android:id="@+id/teacher"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentBottom="true"
+                                android:layout_marginBottom="@dimen/dp_16"
+                                android:layout_marginLeft="@dimen/dp_16"
+                                android:textColor="@color/white"
+                                android:textAppearance="@style/TextAppearance.AppCompat.Medium.Inverse"
+                                android:textStyle="bold"
+                                tool:text="老师" />
+
+                        </LinearLayout>
+
+
+                    </RelativeLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:drawableLeft="@drawable/ic_apps_black_24dp"
+                                android:drawablePadding="@dimen/dp_4"
+                                android:gravity="center_vertical"
+                                android:padding="@dimen/dp_8"
+                                android:text="课程详情:"
+                                android:textColor="@color/black"
+                                android:textSize="16sp"
+                                android:textStyle="bold" />
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="@dimen/dp_1"
+                                android:background="@color/bg_grey" />
+
+                            <TextView
+                                android:id="@+id/course_introduction"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="@dimen/dp_24"
+                                android:padding="@dimen/dp_8"
+                                android:textSize="14sp"
+                                tool:text="课程详情描述" />
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="@dimen/dp_1"
+                                android:background="@color/bg_grey" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:drawableLeft="@drawable/ic_favorite_black_24dp"
+                                android:drawablePadding="@dimen/dp_4"
+                                android:gravity="center_vertical"
+                                android:padding="@dimen/dp_8"
+                                android:text="选课人数:"
+                                android:textColor="@color/black"
+                                android:textSize="16sp"
+                                android:textStyle="bold" />
+
+                            <TextView
+                                android:id="@+id/student_num"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                tool:text="number" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:drawableLeft="@drawable/ic_history_black_24dp"
+                                android:drawablePadding="@dimen/dp_4"
+                                android:gravity="center_vertical"
+                                android:padding="@dimen/dp_8"
+                                android:text="上课时间:"
+                                android:textColor="@color/black"
+                                android:textSize="16sp"
+                                android:textStyle="bold" />
+
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="@dimen/dp_12">
+
+                            <TextView
+                                android:id="@+id/course_time"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="@dimen/dp_24"
+                                android:textStyle="bold"
+                                tool:text="每周一 10:10-12:00    每周三 10:10-12:00" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:drawableLeft="@drawable/ic_place_black_24dp"
+                                android:drawablePadding="@dimen/dp_4"
+                                android:gravity="center_vertical"
+                                android:padding="@dimen/dp_8"
+                                android:text="上课地点:"
+                                android:textColor="@color/black"
+                                android:textSize="16sp"
+                                android:textStyle="bold" />
+
+                            <TextView
+                                android:id="@+id/course_position"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                tool:text="position" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:drawableLeft="@drawable/ic_mic_black_24dp"
+                                android:drawablePadding="@dimen/dp_4"
+                                android:gravity="center_vertical"
+                                android:padding="@dimen/dp_8"
+                                android:text="备注:"
+                                android:textColor="@color/black"
+                                android:textSize="16sp"
+                                android:textStyle="bold" />
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="@dimen/dp_1"
+                                android:background="@color/bg_grey" />
+
+                            <TextView
+                                android:id="@+id/course_other"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="@dimen/dp_24"
+                                android:padding="@dimen/dp_8"
+                                android:textSize="14sp"
+                                tool:text="备注内容" />
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="@dimen/dp_1"
+                                android:background="@color/bg_grey" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:drawableLeft="@drawable/contact_ta_icon_24dp"
+                                android:drawablePadding="@dimen/dp_4"
+                                android:gravity="center_vertical"
+                                android:padding="@dimen/dp_8"
+                                android:text="联系助教:"
+                                android:textColor="@color/black"
+                                android:textSize="16sp"
+                                android:textStyle="bold" />
+
+                            <LinearLayout
+                                android:id="@+id/ta_1"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:visibility="invisible"
+                                android:orientation="horizontal">
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginLeft="@dimen/dp_24"
+                                    android:text="姓名:"
+                                    android:textColor="@color/black"
+                                    android:textSize="14sp" />
+
+                                <TextView
+                                    android:id="@+id/ta_name_1"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginLeft="@dimen/dp_8"
+                                    android:text="陈尧"
+                                    android:textSize="14sp" />
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginLeft="@dimen/dp_24"
+                                    android:text="Email: "
+                                    android:textColor="@color/black"
+                                    android:textSize="14sp" />
+
+                                <TextView
+                                    android:id="@+id/ta_email_1"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:padding="@dimen/dp_8"
+                                    android:text="110@police.gov.cn"
+                                    android:textSize="14sp" />
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:id="@+id/ta_2"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:visibility="invisible"
+                                android:orientation="horizontal">
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginLeft="@dimen/dp_24"
+                                    android:text="姓名:"
+                                    android:textColor="@color/black"
+                                    android:textSize="14sp" />
+
+                                <TextView
+                                    android:id="@+id/ta_name_2"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginLeft="@dimen/dp_8"
+                                    android:text="陈尧"
+                                    android:textSize="14sp" />
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginLeft="@dimen/dp_24"
+                                    android:text="Email: "
+                                    android:textColor="@color/black"
+                                    android:textSize="14sp" />
+
+                                <TextView
+                                    android:id="@+id/ta_email_2"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:padding="@dimen/dp_8"
+                                    android:text="110@police.gov.cn"
+                                    android:textSize="14sp" />
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:id="@+id/ta_3"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:visibility="invisible"
+                                android:orientation="horizontal">
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginLeft="@dimen/dp_24"
+                                    android:text="姓名:"
+                                    android:textColor="@color/black"
+                                    android:textSize="14sp" />
+
+                                <TextView
+                                    android:id="@+id/ta_name_3"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginLeft="@dimen/dp_8"
+                                    android:text="陈尧"
+                                    android:textSize="14sp" />
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginLeft="@dimen/dp_24"
+                                    android:text="Email: "
+                                    android:textColor="@color/black"
+                                    android:textSize="14sp" />
+
+                                <TextView
+                                    android:id="@+id/ta_email_3"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:padding="@dimen/dp_8"
+                                    android:text="110@police.gov.cn"
+                                    android:textSize="14sp" />
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:id="@+id/ta_4"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:visibility="invisible"
+                                android:orientation="horizontal">
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginLeft="@dimen/dp_24"
+                                    android:text="姓名:"
+                                    android:textColor="@color/black"
+                                    android:textSize="14sp" />
+
+                                <TextView
+                                    android:id="@+id/ta_name_4"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginLeft="@dimen/dp_8"
+                                    android:text="陈尧"
+                                    android:textSize="14sp" />
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginLeft="@dimen/dp_24"
+                                    android:text="Email: "
+                                    android:textColor="@color/black"
+                                    android:textSize="14sp" />
+
+                                <TextView
+                                    android:id="@+id/ta_email_4"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:padding="@dimen/dp_8"
+                                    android:text="110@police.gov.cn"
+                                    android:textSize="14sp" />
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:id="@+id/ta_5"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:visibility="invisible"
+                                android:orientation="horizontal">
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginLeft="@dimen/dp_24"
+                                    android:text="姓名:"
+                                    android:textColor="@color/black"
+                                    android:textSize="14sp" />
+
+                                <TextView
+                                    android:id="@+id/ta_name_5"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginLeft="@dimen/dp_8"
+                                    android:text="陈尧"
+                                    android:textSize="14sp" />
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginLeft="@dimen/dp_24"
+                                    android:text="Email: "
+                                    android:textColor="@color/black"
+                                    android:textSize="14sp" />
+
+                                <TextView
+                                    android:id="@+id/ta_email_5"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:padding="@dimen/dp_8"
+                                    android:text="110@police.gov.cn"
+                                    android:textSize="14sp" />
+                            </LinearLayout>
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="@dimen/dp_1"
+                                android:background="@color/bg_grey" />
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+        </ScrollView>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp_1"
+            android:layout_above="@+id/select"
+            android:background="@color/bg_grey" />
+
+        <RelativeLayout
+            android:id="@+id/select"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:padding="@dimen/dp_4">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="right"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/select_course"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="@dimen/dp_12"
+                    android:background="@drawable/selector_btn"
+                    android:padding="@dimen/dp_8"
+                    android:text="立即选课"
+                    android:textColor="@color/white"
+                    android:textSize="20sp" />
+
+                <Button
+                    android:id="@+id/exit_course"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="@dimen/dp_12"
+                    android:background="@drawable/selector_btn"
+                    android:padding="@dimen/dp_8"
+                    android:text="退出课程"
+                    android:textColor="@color/white"
+                    android:textSize="20sp" />
+            </LinearLayout>
+
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+</layout>

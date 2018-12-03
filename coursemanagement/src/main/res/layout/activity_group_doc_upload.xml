@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:background="@color/white"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/dp_8"
+            android:layout_marginRight="@dimen/dp_8"
+            android:orientation="horizontal"
+            android:layout_marginTop="@dimen/dp_24"
+            android:weightSum="1">
+
+            <EditText
+                android:id="@+id/file_path_to_upload"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.96"
+                android:hint="文件路径"
+                android:background="@drawable/panel_bg"
+                android:textStyle="normal" />
+
+            <Button
+                android:id="@+id/select_file_path"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="选择文件" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_margin="@dimen/dp_12"
+            android:layout_marginTop="@dimen/dp_8"
+            android:orientation="vertical">
+
+            <Button
+                android:id="@+id/upload_selected_file"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/selector_btn"
+                android:textColor="@color/white"
+                android:textSize="@dimen/dp_20"
+                android:text="上传文件" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,25 @@
+<resources>
+    <string name="app_name">软微云课堂</string>
+    <string name="title_activity_login">Sign in</string>
+
+    <!-- Strings related to login -->
+    <string name="password"> 密码</string>
+    <string name="prompt_password"> 输入密码</string>
+    <string name="nick_hint"> 输入昵称</string>
+    <string name="retype_password"> 确认密码</string>
+    <string name="student_number"> 学号</string>
+    <string name="action_sign_in">登录</string>
+    <string name="action_register">注册</string>
+    <string name="action_sign_in_short">Sign in</string>
+    <string name="origin_pwd"> 输入旧密码</string>
+    <string name="new_pwd"> 输入新密码</string>
+    <string name="retype_new_pwd"> 重复新密码</string>
+    <string name="reset"> 修改密码</string>
+    <string name="upload_file_str">不加密上传</string>
+    <string name="enc_dec">加密/解密</string>
+    <string name="select_ciphertext_path">选择密文的存储目录</string>
+    <string name="browse">浏览</string>
+    <string name="input_encrypt_policy">输入加密策略</string>
+    <string name="encrypt">加密</string>
+    <string name="get_pk_cn">获取公钥</string>
+</resources>

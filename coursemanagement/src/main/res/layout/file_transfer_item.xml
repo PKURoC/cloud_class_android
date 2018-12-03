@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:fresco="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:gravity="center_vertical"
+    android:padding="@dimen/dp_8">
+
+    <LinearLayout
+        android:id="@+id/file_transfer_content"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <com.facebook.drawee.view.SimpleDraweeView
+                android:id="@+id/file_pic"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                fresco:placeholderImage="@drawable/file_tmp"
+                fresco:roundWithOverlayColor="@android:color/transparent"
+                fresco:roundedCornerRadius="8dp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/dp_8"
+                android:layout_toRightOf="@id/file_pic"
+                android:orientation="vertical"
+                tools:ignore="RtlHardcoded">
+
+                <TextView
+                    android:id="@+id/file_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="14sp"
+                    tools:text="FileName" />
+
+                <TextView
+                    android:id="@+id/remarks"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="12sp"
+                    tools:text="Remarks..." />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+    <ProgressBar
+        android:id="@+id/download_progressBar"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="match_parent"
+        android:layout_height="20dp"
+        android:layout_below="@id/file_transfer_content" />
+</RelativeLayout>

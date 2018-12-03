@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    xmlns:tool="http://schemas.android.com/tools"
+    android:background="@color/white"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <android.support.design.widget.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="?attr/colorPrimary"
+            android:minHeight="?attr/actionBarSize"
+            android:theme="@style/Toolbar"
+            app:popupTheme="@style/ThemeOverlay.AppCompat.Light" />
+    </android.support.design.widget.AppBarLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="220dp">
+
+                <ImageView
+                    android:id="@+id/joined_course_detail_img"
+                    android:background="@drawable/course_bg2"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/joined_course_name"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentBottom="true"
+                        android:layout_marginLeft="@dimen/dp_12"
+                        android:textAppearance="@style/TextAppearance.AppCompat.Headline"
+                        android:textColor="@color/white"
+                        android:textSize="18sp"
+                        android:textStyle="normal"
+                        tool:text="课程名称" />
+
+                    <TextView
+                        android:id="@+id/joined_course_teacher"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentBottom="true"
+                        android:layout_marginBottom="@dimen/dp_16"
+                        android:layout_marginLeft="@dimen/dp_16"
+                        android:textAppearance="@style/TextAppearance.AppCompat.Medium.Inverse"
+                        android:textStyle="bold"
+                        android:textSize="18sp"
+                        tool:text="老师" />
+
+                </LinearLayout>
+
+
+            </RelativeLayout>
+
+            <android.support.design.widget.TabLayout
+                android:id="@+id/cd_tab"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white">
+
+                <android.support.design.widget.TabItem
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:icon="@drawable/ic_apps_black_24dp"
+                    android:text="详情" />
+
+                <android.support.design.widget.TabItem
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:icon="@drawable/ic_group_black_24dp"
+                    android:text="项目小组" />
+
+                <android.support.design.widget.TabItem
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:icon="@drawable/ic_assignment_black_24dp"
+                    android:text="我的作业" />
+            </android.support.design.widget.TabLayout>
+
+            <android.support.design.widget.CoordinatorLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <FrameLayout
+                    android:id="@+id/contentFrame"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"></FrameLayout>
+
+            </android.support.design.widget.CoordinatorLayout>
+        </LinearLayout>
+
+    </ScrollView>
+
+</LinearLayout>

@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <EditText
+        android:id="@+id/forgot_pwd_sid"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/student_number"
+        android:imeActionId="@+id/reg"
+        android:imeActionLabel="@string/action_sign_in_short"
+        android:imeOptions="actionUnspecified"
+        android:inputType="number"
+        android:maxLines="1"
+        android:textStyle="normal" />
+
+    <EditText
+        android:id="@+id/forgot_pwd_new_pwd"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/prompt_password"
+        android:imeActionId="@+id/reg"
+        android:imeActionLabel="@string/action_sign_in_short"
+        android:imeOptions="actionUnspecified"
+        android:inputType="textPassword"
+        android:maxLines="1"
+        android:textStyle="normal" />
+
+</LinearLayout>

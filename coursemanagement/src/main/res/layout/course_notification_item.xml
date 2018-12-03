@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tool="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white">
+
+        <TextView
+            android:id="@+id/current_course_time"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:background="@color/home_bar"
+            android:padding="@dimen/dp_4"
+            tool:text="09:00" />
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="@dimen/dp_2"
+            android:layout_weight="1"
+            android:background="@color/home_bar"
+            android:gravity="center_vertical"
+            android:padding="@dimen/dp_4">
+
+            <TextView
+                android:id="@+id/current_course_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@color/home_bar"
+                android:text="现代图论" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.1"
+                android:gravity="right"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/current_course_position"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@color/home_bar"
+                    android:drawableLeft="@drawable/ic_place_black_24dp"
+                    android:gravity="center_vertical"
+                    android:text="文史楼119" />
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen>
+    <tabs>
+        <tab
+            id="@+id/tab_home"
+            icon="@drawable/va_home"
+            title="首页" />
+        <tab
+            id="@+id/tab_curriculum"
+            icon="@drawable/va_curriculum"
+            title="课表" />
+        <tab
+            id="@+id/tab_storage"
+            icon="@drawable/va_storage"
+            title="云盘" />
+        <tab
+            id="@+id/tab_profile"
+            icon="@drawable/va_mine"
+            title="我的" />
+    </tabs>
+</PreferenceScreen>

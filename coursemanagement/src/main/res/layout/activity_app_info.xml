@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tool="http://schemas.android.com/tools"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <android.support.design.widget.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="?attr/colorPrimary"
+            android:minHeight="?attr/actionBarSize"
+            android:theme="@style/Toolbar"
+            app:popupTheme="@style/ThemeOverlay.AppCompat.Light" />
+    </android.support.design.widget.AppBarLayout>
+
+    <com.github.siyamed.shapeimageview.CircularImageView
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_marginTop="@dimen/dp_24"
+        android:layout_gravity="center_horizontal"
+        android:src="@drawable/logo"
+        app:siBorderColor="@color/bg_grey"
+        app:siBorderWidth="0dp" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dp_14"
+            android:gravity="center_horizontal"
+            android:text="软微云课堂"
+            android:textSize="@dimen/dp_16" />
+
+        <TextView
+            android:id="@+id/app_info_version_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/dp_4"
+            android:layout_marginTop="@dimen/dp_14"
+            android:gravity="center_horizontal"
+            tool:text="v1.0.0"
+            android:textSize="@dimen/dp_16" />
+    </LinearLayout>
+
+    <ListView
+        android:id="@+id/about_list"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dp_24"></ListView>
+</LinearLayout>

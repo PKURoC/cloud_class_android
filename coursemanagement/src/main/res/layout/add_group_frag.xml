@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <data>
+
+        <variable
+            name="group"
+            type="com.vontroy.pku_ss_cloud_class.entry.GroupInfo" />
+    </data>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white"
+        android:gravity="center_horizontal"
+        android:orientation="vertical"
+        android:paddingBottom="@dimen/activity_vertical_margin"
+        android:paddingLeft="@dimen/activity_horizontal_margin"
+        android:paddingRight="@dimen/activity_horizontal_margin">
+
+        <ScrollView
+            android:id="@+id/add_group_form"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/fab_margin">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="@dimen/dp_14"
+                    android:orientation="vertical"
+                    android:weightSum="1">
+
+                    <EditText
+                        android:id="@+id/group_name"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="小组名称"
+                        android:maxLines="1"
+                        android:text="@{group.groupName}"
+                        android:textStyle="normal" />
+
+                    <EditText
+                        android:id="@+id/group_introduction"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/dp_12"
+                        android:hint="小组简介"
+                        android:maxLines="1"
+                        android:text="@{group.groupIntroduction}"
+                        android:textStyle="normal" />
+
+                    <Button
+                        android:id="@+id/add_group_btn"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/dp_18"
+                        android:background="@drawable/selector_btn"
+                        android:text="创建小组"
+                        android:textColor="@color/white"
+                        android:textSize="20sp" />
+                </LinearLayout>
+
+            </LinearLayout>
+        </ScrollView>
+
+        <ProgressBar
+
+            android:id="@+id/add_group_progress"
+            style="?android:attr/progressBarStyleLarge"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp"
+            android:visibility="gone" />
+
+    </LinearLayout>
+</layout>

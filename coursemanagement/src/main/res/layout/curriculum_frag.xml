@@ -1,0 +1,727 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tool="http://schemas.android.com/tools">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.09"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="@dimen/dp_1"
+                android:layout_height="match_parent"
+                android:layout_marginTop="@dimen/dp_6"
+                android:background="@color/black" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="center_horizontal"
+                android:gravity="center"
+                android:layout_weight="0.25"
+                android:textSize="16sp"
+                tool:text="" />
+
+            <TextView
+                android:layout_width="@dimen/dp_1"
+                android:layout_height="match_parent"
+                android:layout_marginTop="@dimen/dp_6"
+                android:background="@color/black" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="@dimen/dp_6"
+                android:layout_weight="0.25"
+                android:gravity="center"
+                android:text="上午"
+                android:textColor="@color/black"
+                android:textSize="16sp" />
+
+            <TextView
+                android:layout_width="@dimen/dp_1"
+                android:layout_height="match_parent"
+                android:layout_marginTop="@dimen/dp_6"
+                android:background="@color/black" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="@dimen/dp_6"
+                android:gravity="center"
+                android:layout_weight="0.25"
+                android:text="下午"
+                android:textColor="@color/black"
+                android:textSize="16sp" />
+
+            <TextView
+                android:layout_width="@dimen/dp_1"
+                android:layout_height="match_parent"
+                android:layout_marginTop="@dimen/dp_6"
+                android:background="@color/black" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="@dimen/dp_6"
+                android:layout_weight="0.25"
+                android:gravity="center"
+                android:text="晚上"
+                android:textColor="@color/black"
+                android:textSize="16sp" />
+
+            <TextView
+                android:layout_width="@dimen/dp_1"
+                android:layout_height="match_parent"
+                android:layout_marginTop="@dimen/dp_6"
+                android:background="@color/black" />
+
+
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp_1"
+            android:layout_marginTop="@dimen/dp_6"
+            android:background="@color/black" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.13"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="@dimen/dp_1"
+                android:layout_height="match_parent"
+                android:layout_marginTop="@dimen/dp_6"
+                android:background="@color/black" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="center_horizontal"
+                android:layout_weight="0.25"
+                android:gravity="center"
+                android:text="星期一"
+                android:textSize="16sp" />
+
+            <TextView
+                android:layout_width="@dimen/dp_1"
+                android:layout_height="match_parent"
+                android:layout_marginTop="@dimen/dp_6"
+                android:background="@color/black" />
+
+            <TextView
+                android:id="@+id/course_1_a"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="@dimen/dp_6"
+                android:layout_weight="0.25"
+                android:gravity="center"
+                tool:text="上午"
+                android:textColor="@color/black"
+                android:textSize="16sp" />
+
+            <TextView
+                android:layout_width="@dimen/dp_1"
+                android:layout_height="match_parent"
+                android:layout_marginTop="@dimen/dp_6"
+                android:background="@color/black" />
+
+            <TextView
+                android:id="@+id/course_1_p"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="@dimen/dp_6"
+                android:layout_weight="0.25"
+                android:gravity="center"
+                tool:text="下午"
+                android:textColor="@color/black"
+                android:textSize="16sp" />
+
+            <TextView
+                android:layout_width="@dimen/dp_1"
+                android:layout_height="match_parent"
+                android:layout_marginTop="@dimen/dp_6"
+                android:background="@color/black" />
+
+            <TextView
+                android:id="@+id/course_1_e"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="@dimen/dp_6"
+                android:layout_weight="0.25"
+                android:gravity="center"
+                tool:text="晚上"
+                android:textColor="@color/black"
+                android:textSize="16sp" />
+
+            <TextView
+                android:layout_width="@dimen/dp_1"
+                android:layout_height="match_parent"
+                android:layout_marginTop="@dimen/dp_6"
+                android:background="@color/black" />
+
+
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp_1"
+            android:layout_marginTop="@dimen/dp_6"
+            android:background="@color/black" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.13"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="@dimen/dp_1"
+                android:layout_height="match_parent"
+                android:layout_marginTop="@dimen/dp_6"
+                android:background="@color/black" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="center_horizontal"
+                android:layout_weight="0.25"
+                android:gravity="center"
+                android:text="星期二"
+                android:textSize="16sp" />
+
+            <TextView
+                android:layout_width="@dimen/dp_1"
+                android:layout_height="match_parent"
+                android:layout_marginTop="@dimen/dp_6"
+                android:background="@color/black" />
+
+            <TextView
+                android:id="@+id/course_2_a"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="@dimen/dp_6"
+                android:layout_weight="0.25"
+                android:gravity="center"
+                tool:text="上午"
+                android:textColor="@color/black"
+                android:textSize="16sp" />
+
+            <TextView
+                android:layout_width="@dimen/dp_1"
+                android:layout_height="match_parent"
+                android:layout_marginTop="@dimen/dp_6"
+                android:background="@color/black" />
+
+            <TextView
+                android:id="@+id/course_2_p"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="@dimen/dp_6"
+                android:layout_weight="0.25"
+                android:gravity="center"
+                tool:text="下午"
+                android:textColor="@color/black"
+                android:textSize="16sp" />
+
+            <TextView
+                android:layout_width="@dimen/dp_1"
+                android:layout_height="match_parent"
+                android:layout_marginTop="@dimen/dp_6"
+                android:background="@color/black" />
+
+            <TextView
+                android:id="@+id/course_2_e"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="@dimen/dp_6"
+                android:layout_weight="0.25"
+                android:gravity="center"
+                tool:text="晚上"
+                android:textColor="@color/black"
+                android:textSize="16sp" />
+
+            <TextView
+                android:layout_width="@dimen/dp_1"
+                android:layout_height="match_parent"
+                android:layout_marginTop="@dimen/dp_6"
+                android:background="@color/black" />
+
+
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp_1"
+            android:layout_marginTop="@dimen/dp_6"
+            android:background="@color/black" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.13"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="@dimen/dp_1"
+                android:layout_height="match_parent"
+                android:layout_marginTop="@dimen/dp_6"
+                android:background="@color/black" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="center_horizontal"
+                android:layout_weight="0.25"
+                android:gravity="center"
+                android:text="星期三"
+                android:textSize="16sp" />
+
+            <TextView
+                android:layout_width="@dimen/dp_1"
+                android:layout_height="match_parent"
+                android:layout_marginTop="@dimen/dp_6"
+                android:background="@color/black" />
+
+            <TextView
+                android:id="@+id/course_3_a"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="@dimen/dp_6"
+                android:layout_weight="0.25"
+                android:gravity="center"
+                tool:text="上午"
+                android:textColor="@color/black"
+                android:textSize="16sp" />
+
+            <TextView
+                android:layout_width="@dimen/dp_1"
+                android:layout_height="match_parent"
+                android:layout_marginTop="@dimen/dp_6"
+                android:background="@color/black" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="@dimen/dp_6"
+                android:layout_weight="0.25"
+                android:id="@+id/course_3_p"
+                android:gravity="center"
+                tool:text="下午"
+                android:textColor="@color/black"
+                android:textSize="16sp" />
+
+            <TextView
+                android:layout_width="@dimen/dp_1"
+                android:layout_height="match_parent"
+                android:layout_marginTop="@dimen/dp_6"
+                android:background="@color/black" />
+
+            <TextView
+                android:id="@+id/course_3_e"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="@dimen/dp_6"
+                android:layout_weight="0.25"
+                android:gravity="center"
+                tool:text="晚上"
+                android:textColor="@color/black"
+                android:textSize="16sp" />
+
+            <TextView
+                android:layout_width="@dimen/dp_1"
+                android:layout_height="match_parent"
+                android:layout_marginTop="@dimen/dp_6"
+                android:background="@color/black" />
+
+
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp_1"
+            android:layout_marginTop="@dimen/dp_6"
+            android:background="@color/black" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.13"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="@dimen/dp_1"
+                android:layout_height="match_parent"
+                android:layout_marginTop="@dimen/dp_6"
+                android:background="@color/black" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="center_horizontal"
+                android:layout_weight="0.25"
+                android:gravity="center"
+                android:text="星期四"
+                android:textSize="16sp" />
+
+            <TextView
+                android:layout_width="@dimen/dp_1"
+                android:layout_height="match_parent"
+                android:layout_marginTop="@dimen/dp_6"
+                android:background="@color/black" />
+
+            <TextView
+                android:id="@+id/course_4_a"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="@dimen/dp_6"
+                android:layout_weight="0.25"
+                android:gravity="center"
+                tool:text="上午"
+                android:textColor="@color/black"
+                android:textSize="16sp" />
+
+            <TextView
+                android:layout_width="@dimen/dp_1"
+                android:layout_height="match_parent"
+                android:layout_marginTop="@dimen/dp_6"
+                android:background="@color/black" />
+
+            <TextView
+                android:id="@+id/course_4_p"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="@dimen/dp_6"
+                android:layout_weight="0.25"
+                android:gravity="center"
+                tool:text="下午"
+                android:textColor="@color/black"
+                android:textSize="16sp" />
+
+            <TextView
+                android:layout_width="@dimen/dp_1"
+                android:layout_height="match_parent"
+                android:layout_marginTop="@dimen/dp_6"
+                android:background="@color/black" />
+
+            <TextView
+                android:id="@+id/course_4_e"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="@dimen/dp_6"
+                android:layout_weight="0.25"
+                android:gravity="center"
+                tool:text="晚上"
+                android:textColor="@color/black"
+                android:textSize="16sp" />
+
+            <TextView
+                android:layout_width="@dimen/dp_1"
+                android:layout_height="match_parent"
+                android:layout_marginTop="@dimen/dp_6"
+                android:background="@color/black" />
+
+
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp_1"
+            android:layout_marginTop="@dimen/dp_6"
+            android:background="@color/black" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.13"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="@dimen/dp_1"
+                android:layout_height="match_parent"
+                android:layout_marginTop="@dimen/dp_6"
+                android:background="@color/black" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="center_horizontal"
+                android:layout_weight="0.25"
+                android:gravity="center"
+                android:text="星期五"
+                android:textSize="16sp" />
+
+            <TextView
+                android:layout_width="@dimen/dp_1"
+                android:layout_height="match_parent"
+                android:layout_marginTop="@dimen/dp_6"
+                android:background="@color/black" />
+
+            <TextView
+                android:id="@+id/course_5_a"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="@dimen/dp_6"
+                android:layout_weight="0.25"
+                android:gravity="center"
+                tool:text="上午"
+                android:textColor="@color/black"
+                android:textSize="16sp" />
+
+            <TextView
+                android:layout_width="@dimen/dp_1"
+                android:layout_height="match_parent"
+                android:layout_marginTop="@dimen/dp_6"
+                android:background="@color/black" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/course_5_p"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="@dimen/dp_6"
+                android:layout_weight="0.25"
+                android:gravity="center"
+                tool:text="下午"
+                android:textColor="@color/black"
+                android:textSize="16sp" />
+
+            <TextView
+                android:layout_width="@dimen/dp_1"
+                android:layout_height="match_parent"
+                android:layout_marginTop="@dimen/dp_6"
+                android:background="@color/black" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/course_5_e"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="@dimen/dp_6"
+                android:layout_weight="0.25"
+                android:gravity="center"
+                tool:text="晚上"
+                android:textColor="@color/black"
+                android:textSize="16sp" />
+
+            <TextView
+                android:layout_width="@dimen/dp_1"
+                android:layout_height="match_parent"
+                android:layout_marginTop="@dimen/dp_6"
+                android:background="@color/black" />
+
+
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp_1"
+            android:layout_marginTop="@dimen/dp_6"
+            android:background="@color/black" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.13"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="@dimen/dp_1"
+                android:layout_height="match_parent"
+                android:layout_marginTop="@dimen/dp_6"
+                android:background="@color/black" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:layout_gravity="center_horizontal"
+                android:layout_weight="0.25"
+                android:text="星期六"
+                android:textSize="16sp" />
+
+            <TextView
+                android:layout_width="@dimen/dp_1"
+                android:layout_height="match_parent"
+                android:layout_marginTop="@dimen/dp_6"
+                android:background="@color/black" />
+
+            <TextView
+                android:id="@+id/course_6_a"
+                android:gravity="center"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="@dimen/dp_6"
+                android:layout_weight="0.25"
+                tool:text="上午"
+                android:textColor="@color/black"
+                android:textSize="16sp" />
+
+            <TextView
+                android:layout_width="@dimen/dp_1"
+                android:layout_height="match_parent"
+                android:layout_marginTop="@dimen/dp_6"
+                android:background="@color/black" />
+
+            <TextView
+                android:gravity="center"
+                android:id="@+id/course_6_p"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="@dimen/dp_6"
+                android:layout_weight="0.25"
+                tool:text="下午"
+                android:textColor="@color/black"
+                android:textSize="16sp" />
+
+            <TextView
+                android:layout_width="@dimen/dp_1"
+                android:layout_height="match_parent"
+                android:layout_marginTop="@dimen/dp_6"
+                android:background="@color/black" />
+
+            <TextView
+                android:id="@+id/course_6_e"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="@dimen/dp_6"
+                android:layout_weight="0.25"
+                tool:text="晚上"
+                android:textColor="@color/black"
+                android:textSize="16sp" />
+
+            <TextView
+                android:layout_width="@dimen/dp_1"
+                android:layout_height="match_parent"
+                android:layout_marginTop="@dimen/dp_6"
+                android:background="@color/black" />
+
+
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp_1"
+            android:layout_marginTop="@dimen/dp_6"
+            android:background="@color/black" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.13"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="@dimen/dp_1"
+                android:layout_height="match_parent"
+                android:layout_marginTop="@dimen/dp_6"
+                android:background="@color/black" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="center_horizontal"
+                android:layout_weight="0.25"
+                android:gravity="center"
+                android:text="星期日"
+                android:textSize="16sp" />
+
+            <TextView
+                android:layout_width="@dimen/dp_1"
+                android:layout_height="match_parent"
+                android:layout_marginTop="@dimen/dp_6"
+                android:background="@color/black" />
+
+            <TextView
+                android:id="@+id/course_7_a"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="@dimen/dp_6"
+                android:layout_weight="0.25"
+                android:gravity="center"
+                tool:text="上午"
+                android:textColor="@color/black"
+                android:textSize="16sp" />
+
+            <TextView
+                android:layout_width="@dimen/dp_1"
+                android:layout_height="match_parent"
+                android:layout_marginTop="@dimen/dp_6"
+                android:background="@color/black" />
+
+            <TextView
+                android:id="@+id/course_7_p"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="@dimen/dp_6"
+                android:layout_weight="0.25"
+                android:gravity="center"
+                tool:text="下午"
+                android:textColor="@color/black"
+                android:textSize="16sp" />
+
+            <TextView
+                android:layout_width="@dimen/dp_1"
+                android:layout_height="match_parent"
+                android:layout_marginTop="@dimen/dp_6"
+                android:background="@color/black" />
+
+            <TextView
+                android:id="@+id/course_7_e"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="@dimen/dp_6"
+                android:layout_weight="0.25"
+                android:gravity="center"
+                tool:text="晚上"
+                android:textColor="@color/black"
+                android:textSize="16sp" />
+
+            <TextView
+                android:layout_width="@dimen/dp_1"
+                android:layout_height="match_parent"
+                android:layout_marginTop="@dimen/dp_6"
+                android:background="@color/black" />
+
+
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp_1"
+            android:layout_marginTop="@dimen/dp_6"
+            android:background="@color/black" />
+    </LinearLayout>
+</layout>
